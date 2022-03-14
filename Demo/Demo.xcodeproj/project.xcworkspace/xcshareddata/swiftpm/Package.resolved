@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DMPClientPublic",
+        "repositoryURL": "https://github.com/Rashidium/DMPClientPublic",
+        "state": {
+          "branch": null,
+          "revision": "2eac770762bc17abc9c46381712ba5c213ddfd65",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
