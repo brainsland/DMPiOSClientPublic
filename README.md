@@ -28,6 +28,13 @@ You can enable developer mode to get detailed logs from SDK.
 DMP.shared.enableLogging(true)
 ```
 
+## Setting Language
+You can set SDK language through `setLanguage`:
+
+```swift
+DMP.shared.setLanguage("tr")
+```
+
 ## Tracking
 
 ### Page View
