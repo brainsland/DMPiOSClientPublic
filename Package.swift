@@ -17,8 +17,5 @@ let package = Package(
             name: "DMPClientPublic",
             dependencies: ["DMPClient"]),
         .binaryTarget(name: "DMPClient", path: "binaries/DMPClient.xcframework"),
-        .testTarget(
-            name: "DMPClientPublicTests",
-            dependencies: ["DMPClientPublic"])
     ]
 )
