@@ -11,7 +11,7 @@ https://github.com/Rashidium/DMPClientPublic.git
 ```
 
 ### Manually
-You can download and embed the framework manually [from](https://github.com/Rashidium/DMPClientPublic/tree/main/binaries/DMPClient.xcframework)
+You can download and embed the [framework](https://github.com/Rashidium/DMPClientPublic/tree/main/binaries/DMPClient.xcframework) manually.
 
 ## Setup
 Before you, start you need to configure DMPClient SDK. Ideally, `setup` should be done when the app starts, eg `AppDelegate`'s `didFinishLaunchingWithOptions`:
