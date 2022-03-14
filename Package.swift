@@ -16,7 +16,14 @@ let package = Package(
         .target(
             name: "DMPClientPublic",
             dependencies: ["DMPClient"],
-            exclude: ["../../Demo"]
+            exclude: [
+                "../../Demo/Demo/Base.lproj",
+                "../../Demo/Demo/AppDelegate.swift",
+                "../../Demo/Demo/SceneDelegate.swift",
+                "../../Demo/Demo/ViewController.swift",
+                "../../Demo/Demo/Info.plist",
+                "../../Demo/Demo/Assets.xcassets",
+            ]
         ),
         .binaryTarget(name: "DMPClient",path: "binaries/DMPClient.xcframework"),
     ]
