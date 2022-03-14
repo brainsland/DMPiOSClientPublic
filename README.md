@@ -5,7 +5,7 @@ DMPClient iOS SDK
 ## Installation
 
 ### Swift Package Manager
-DMPClient supports installation throught SPM:
+DMPClient supports installation through SPM:
 ```
 https://github.com/Rashidium/DMPClientPublic.git
 ```
@@ -14,7 +14,7 @@ https://github.com/Rashidium/DMPClientPublic.git
 You can download and embed the [framework](https://github.com/Rashidium/DMPClientPublic/tree/main/binaries/DMPClient.xcframework) manually.
 
 ## Setup
-Before you, start you need to configure DMPClient SDK. Ideally, `setup` should be done when the app starts, eg `AppDelegate`'s `didFinishLaunchingWithOptions`:
+Firstly, you need to configure DMPClient SDK by calling `setup` when the app is started, ideally at `AppDelegate`'s `didFinishLaunchingWithOptions` function:
 
 ```swift
 let url = URL(string: "https://backend.com/api")!
@@ -22,22 +22,33 @@ DMP.shared.setup("usertest", url: url)
 ```
 
 ## Logging
-You can enable developer mode to see detailed logs.
+You can enable developer mode to get detailed logs from SDK.
+
 ```swift
 DMP.shared.enableLogging(true)
 ```
 
-## Usage
+## Tracking
 
 ### Page View
+Any page that is needed to be tracked, should `pageView` function. PageView function returns unique page and page view identifiers which represents calling page. Initialy, when the view controller is appeared, this function will return the identifiers. **You must save that info on view controller to pass it to the sdk, when the controller is reappared.**
+
 ```swift
-let request = PageViewRequest(
-    url: "https://hurriyet.com/", canonicalUrl: "", title: "", referrer: "r",
-    origin: "o", infiniteScrollDepth: 0
-)
-DMP.shared.pageView(request)
-DMP.shared.pageView(request, info)
+class ViewController: UIViewController {
+    var pageViewInfo: PageViewInfo?
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let request = PageViewRequest(
+            url: "https://example.com/", canonicalUrl: "", title: "", referrer: "r",
+            origin: "o", infiniteScrollDepth: 0
+        )
+        pageViewInfo = DMP.shared.pageView(request, pageViewInfo)
+    }
+}
 ```
+
+### Page Duration
+Page durations are tracked through `pageView` requests automatically through saved `PageViewInfo`. Implementing `pageView` mentioned above will be enough to get necessary functionality.
 
 ### Breadcrumb
 ```swift
