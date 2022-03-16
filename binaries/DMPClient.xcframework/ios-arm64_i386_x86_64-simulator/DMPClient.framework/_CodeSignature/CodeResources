@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z925GzlnCu6F1UsOxrY91GclmNs=
+		Q4kxAPHj3SvPxdZD0qohmpfJQnU=
 		</data>
 		<key>Modules/DMPClient.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		z925GzlnCu6F1UsOxrY91GclmNs=
+		Q4kxAPHj3SvPxdZD0qohmpfJQnU=
 		</data>
 		<key>Modules/DMPClient.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DJ2fDMTL5EK5R3Nue2nOjvwYqf8=
+		GMPDaYST5ZBtdT7khcXob8U9oEk=
 		</data>
 		<key>Modules/DMPClient.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/i386.swiftmodule</key>
 		<data>
-		DJ2fDMTL5EK5R3Nue2nOjvwYqf8=
+		GMPDaYST5ZBtdT7khcXob8U9oEk=
 		</data>
 		<key>Modules/DMPClient.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hehIah41BraEShBdfY0btN1NWWY=
+		UmavvXJmyh+z/1NQsgsg01ekQWQ=
 		</data>
 		<key>Modules/DMPClient.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/DMPClient.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		hehIah41BraEShBdfY0btN1NWWY=
+		UmavvXJmyh+z/1NQsgsg01ekQWQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -124,11 +124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z925GzlnCu6F1UsOxrY91GclmNs=
+			Q4kxAPHj3SvPxdZD0qohmpfJQnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnoROmCJq0Au/acF3HQZrj2yAb/FN4pwVutWzcXRpVw=
+			IeAuIzRLkLPzho1Epqnjc1yOdH4nVLj4eqG9FJWp7PQ=
 			</data>
 		</dict>
 		<key>Modules/DMPClient.swiftmodule/arm64.swiftdoc</key>
@@ -157,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z925GzlnCu6F1UsOxrY91GclmNs=
+			Q4kxAPHj3SvPxdZD0qohmpfJQnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnoROmCJq0Au/acF3HQZrj2yAb/FN4pwVutWzcXRpVw=
+			IeAuIzRLkLPzho1Epqnjc1yOdH4nVLj4eqG9FJWp7PQ=
 			</data>
 		</dict>
 		<key>Modules/DMPClient.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -190,11 +190,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ2fDMTL5EK5R3Nue2nOjvwYqf8=
+			GMPDaYST5ZBtdT7khcXob8U9oEk=
 			</data>
 			<key>hash2</key>
 			<data>
-			9td5BSAYac3O0XAsSG7bfTiMwLtcQkR0qLDos9EhbhI=
+			ZoeLVyIaHwsAgqXWCQ9rUsT4UX7irmZkaM30JxOVmhY=
 			</data>
 		</dict>
 		<key>Modules/DMPClient.swiftmodule/i386.swiftdoc</key>
@@ -223,11 +223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DJ2fDMTL5EK5R3Nue2nOjvwYqf8=
+			GMPDaYST5ZBtdT7khcXob8U9oEk=
 			</data>
 			<key>hash2</key>
 			<data>
-			9td5BSAYac3O0XAsSG7bfTiMwLtcQkR0qLDos9EhbhI=
+			ZoeLVyIaHwsAgqXWCQ9rUsT4UX7irmZkaM30JxOVmhY=
 			</data>
 		</dict>
 		<key>Modules/DMPClient.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hehIah41BraEShBdfY0btN1NWWY=
+			UmavvXJmyh+z/1NQsgsg01ekQWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoCcF67Hj/tR7S8mHzuUlTjJYiiz1YH0K0THLB1ydAk=
+			x+uSfJvYX3k+sEuBHA7OL3ks5+YJD0LhFbSik/GmdCQ=
 			</data>
 		</dict>
 		<key>Modules/DMPClient.swiftmodule/x86_64.swiftdoc</key>
@@ -289,11 +289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hehIah41BraEShBdfY0btN1NWWY=
+			UmavvXJmyh+z/1NQsgsg01ekQWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoCcF67Hj/tR7S8mHzuUlTjJYiiz1YH0K0THLB1ydAk=
+			x+uSfJvYX3k+sEuBHA7OL3ks5+YJD0LhFbSik/GmdCQ=
 			</data>
 		</dict>
 	</dict>
