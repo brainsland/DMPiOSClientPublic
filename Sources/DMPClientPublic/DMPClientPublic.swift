@@ -10,6 +10,6 @@ import DMPClient
 
 struct DMPClientPublic {
     func setup() {
-        DMP.shared.setup("", url: URL(string: "")!)
+//        DMP.shared.setup("", url: URL(string: "")!)
     }
 }
