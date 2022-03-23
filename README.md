@@ -7,18 +7,18 @@ DMPClient iOS SDK
 ### Swift Package Manager
 DMPClient supports installation through SPM:
 ```
-https://github.com/Rashidium/DMPClientPublic.git
+https://github.com/brainsland/DMPiOSClientPublic.git
 ```
 
 ### Manually
-You can download and embed the [framework](https://github.com/Rashidium/DMPClientPublic/tree/main/binaries/DMPClient.xcframework) manually.
+You can download and embed the [framework](https://github.com/brainsland/DMPiOSClientPublic/tree/main/binaries/DMPClient.xcframework) manually.
 
 ## Setup
 Firstly, you need to configure DMPClient SDK by calling `setup` when the app is started, ideally at `AppDelegate`'s `didFinishLaunchingWithOptions` function:
 
 ```swift
 let url = URL(string: "https://backend.com/api")!
-DMP.shared.setup("usertest", url: url)
+DMP.shared.setup(projectId: "usertest", url: url, language: "tr")
 ```
 
 ## Logging
@@ -28,17 +28,11 @@ You can enable developer mode to get detailed logs from SDK.
 DMP.shared.enableLogging(true)
 ```
 
-## Setting Language
-You can set SDK language through `setLanguage`:
-
-```swift
-DMP.shared.setLanguage("tr")
-```
-
 ## Tracking
+SDK collects most of data automatically, like sent time, timezone, session identifier. Tracking requests through `DMP.shared` instance are explained below. Any view controller that use tracking, must call `pageView` function on its `viewDidAppear` function as explained below. This way, SDK can track page durations automatically and reuse page identifiers.
 
 ### Page View
-Any page that is needed to be tracked, should `pageView` function. PageView function returns unique page and page view identifiers which represents calling page. Initialy, when the view controller is appeared, this function will return the identifiers. **You must save that info on view controller to pass it to the sdk, when the controller is reappared.**
+Any page that is needed to be tracked, should use `pageView` function. PageView function returns unique page and page view identifiers which represents calling page. Initialy, when the view controller is **appeared**, this function will return the identifiers. **You must save that info on view controller to pass it to the sdk, when the controller is reappared.**
 
 ```swift
 class ViewController: UIViewController {
