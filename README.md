@@ -40,8 +40,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let request = PageViewRequest(
-            url: "https://example.com/", canonicalUrl: "", title: "", referrer: "r",
-            origin: "o", infiniteScrollDepth: 0
+            url: "https://example.com/", canonicalUrl: "", title: "", referrer: "r", infiniteScrollDepth: 0
         )
         pageViewInfo = DMP.shared.pageView(request, pageViewInfo)
     }
