@@ -10,8 +10,8 @@ import WebKit
 import _Concurrency
 @_hasMissingDesignatedInitializers public class DMP {
   public static let shared: DMPClient.DMP
-  public func setup(projectId: Swift.String, url: Foundation.URL, language: Swift.String = "tr")
   public func enableLogging(_ isEnabled: Swift.Bool)
+  public func setup(projectId: Swift.String, url: Foundation.URL, language: Swift.String = "tr")
   public func pageView(_ pageView: DMPClient.PageViewRequest, _ info: DMPClient.PageViewInfo?) -> DMPClient.PageViewInfo
   public func breadcrumb(breadcrumb1: Swift.String, breadcrumb2: Swift.String? = nil, breadcrumb3: Swift.String? = nil, breadcrumb4: Swift.String? = nil, breadcrumb5: Swift.String? = nil, breadcrumb6: Swift.String? = nil, breadcrumb7: Swift.String? = nil, breadcrumb8: Swift.String? = nil, breadcrumb9: Swift.String? = nil, breadcrumb10: Swift.String? = nil)
   public func scrollPosition(_ position: Swift.Int)
