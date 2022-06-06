@@ -113,7 +113,7 @@ Apple clang version 13.1.6 (clang-1316.0.20.12)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
 <swift-imported-modules>
-/Users/mobven/Development/iOS/DMPClient
+/Users/mobven/Development/ios/DMPClient
 Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 /Users/mobven/Development/ios/DMPClient/Sources/DMPClient/API.swift
 $sSo11CFStringRefaMa
@@ -154,8 +154,7 @@ $sSSSHsSH13_rawHashValue4seedS2i_tFTW
 $sSHsE13_rawHashValue4seedS2i_tFSS_Tgq5
 $sSE9DMPClientE4json4with10Foundation4DataVSgAD11JSONEncoderC_tFfA_
 $sSE9DMPClientE4json4with10Foundation4DataVSgAD11JSONEncoderC_tFfA_Tf4_n
-ios/DMPClient/Sources/DMPClient/Extensions/Encodable.swift
-/Users/mobven/Development
+Sources/DMPClient/Extensions/Encodable.swift
 fetch
 isTestLoggingEnabled.modify
 isLoggingEnabled.set
@@ -181,7 +180,7 @@ $s9DMPClient3APIC5fetch_10completionyx_ySbctAA16InputDataRequestRzlFy10Foundatio
 appendLiteral
 getRequest
 $s9DMPClient3DMPC6sharedACvau
-ios/DMPClient/Sources/DMPClient/DMP.swift
+Sources/DMPClient/DMP.swift
 $sSa13_adoptStorage_5countSayxG_SpyxGts016_ContiguousArrayB0CyxGn_SitFZSS_SSt_Tg5
 $ss22_ContiguousArrayBufferV19firstElementAddressSpyxGvgSS_SSt_Tg5
 $ss22_ContiguousArrayBufferV5count7storageAByxGSi_s01_aB7StorageCyxGtcfCSS_SSt_Tg5
@@ -249,6 +248,7 @@ _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvg
 _$s9DMPClient3DMPC10projectURL10Foundation0D0VSgvgTm
 _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvs
 _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvM
+_$s9DMPClient3DMPC10pageViewIdSSvg
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvpACTk
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvg
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvs
@@ -431,17 +431,18 @@ $s9DMPClient3DMPC12callPageView7requestyAA0dE7RequestV_tFySbcfU_
 pageView
 Swift runtime failure: Unexpectedly found nil while unwrapping an Optional value
 isEmpty.get
-ios/DMPClient/Sources/DMPClient/Requests/Base/PageViewInfo.swift
+Sources/DMPClient/Requests/Base/PageViewInfo.swift
 setup
 $s9DMPClient7SessionC6sharedACvau
-ios/DMPClient/Sources/DMPClient/Helper/Session.swift
-ios/DMPClient/Sources/DMPClient/DMP+Observers.swift
+Sources/DMPClient/Helper/Session.swift
+Sources/DMPClient/DMP+Observers.swift
 projectURL.set
 pageCanonicalURL.get
 pageViewURL.get
 pageViewInfo.modify
 pageViewRequest.set
 $s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvpACTk
+pageViewId.get
 pageViewRequest.modify
 projectURL.get
 $s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvpACTk
@@ -456,7 +457,7 @@ isTestLoggingEnabled.didset
 __swift_mutable_project_boxed_opaque_existential_1
 language.get
 projectURL.didset
-ios/DMPClient/Sources/DMPClient/API.swift
+Sources/DMPClient/API.swift
 $s9DMPClient3DMPC10projectURL10Foundation0D0VSgvpACTk
 projectId.get
 frameworkVersion.get
@@ -568,7 +569,7 @@ $sSf8isFiniteSbvg
 height.get
 width.get
 subscript.set
-ios/DMPClient/Sources/DMPClient/Helper/Keychain.swift
+Sources/DMPClient/Helper/Keychain.swift
 global
 subscript.get
 load
@@ -678,7 +679,6 @@ $s9DMPClient12PageViewInfoVwca
 $s9DMPClient12PageViewInfoVwcp
 $s9DMPClient12PageViewInfoVwxx
 $s9DMPClient12PageViewInfoVwCP
-pageViewId.get
 viewId.get
 $s9DMPClient12PageViewInfoVWOh
 $s9DMPClient12PageViewInfoVWOc
@@ -934,7 +934,7 @@ $ss15ContiguousArrayV034_makeUniqueAndReserveCapacityIfNotD0yyFSS_Tg5
 $ss22_ContiguousArrayBufferV16beginCOWMutationSbyFSS_Tg5
 $ss5UInt8VSSs5Error_pIgyozo_ABSSsAC_pIegnrzo_TR053$s10Foundation4DataV9DMPClientE12md5CryptoKitSSyFSSs5A6VXEfU_Tf3nnpf_n
 $s10Foundation4DataV9DMPClientE12md5CryptoKitSSyFSSs5UInt8VXEfU_
-ios/DMPClient/Sources/DMPClient/Extensions/Data.swift
+Sources/DMPClient/Extensions/Data.swift
 $sSa11_getElement_20wasNativeTypeChecked22matchingSubscriptCheckxSi_Sbs16_DependenceTokenVtFs5UInt8V_Tg5
 $sSayxGSlsSl9formIndex5aftery0B0Qzz_tFTWs5UInt8V_Tg5
 $sSa9formIndex5afterySiz_tFs5UInt8V_Tg5
@@ -949,7 +949,7 @@ $ss15ContiguousArrayV15reserveCapacityyySiFSS_Tg5
 $ss15ContiguousArrayV12_endMutationyyFSS_Tg5
 $ss15ContiguousArrayV20_reserveCapacityImpl07minimumD013growForAppendySi_SbtFSS_Tg5
 $s9DMPClient7RequestVMa
-ios/DMPClient/Sources/DMPClient/Extensions/Date.swift
+Sources/DMPClient/Extensions/Date.swift
 _$s9DMPClient17BreadcrumbRequestV7dataKeySSSgvM.resume.0
 _$s9DMPClient17BreadcrumbRequestV6sendAt10Foundation4DateVvM.resume.0
 _$s9DMPClient17BreadcrumbRequestV8timezoneSivM.resume.0
@@ -1617,7 +1617,7 @@ $s9DMPClient15PageViewRequestV10CodingKeysOs0E3KeyAAs28CustomDebugStringConverti
 $s9DMPClient15PageViewRequestV10CodingKeysOAESQAAWl
 $s9DMPClient15PageViewRequestV10CodingKeysOSHAASQWb
 $s9DMPClient15PageViewRequestV10CodingKeysOAEs0E3KeyAAWl
-ios/DMPClient/Sources/DMPClient/Helper/Device.swift
+Sources/DMPClient/Helper/Device.swift
 referrerPageViewId.modify
 referrerPageViewId.set
 referrerPageViewId.get
