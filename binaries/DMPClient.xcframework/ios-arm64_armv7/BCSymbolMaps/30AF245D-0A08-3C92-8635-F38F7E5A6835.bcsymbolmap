@@ -239,7 +239,6 @@ _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvg
 _$s9DMPClient3DMPC10projectURL10Foundation0D0VSgvgTm
 _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvs
 _$s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvM
-_$s9DMPClient3DMPC10pageViewIdSSvg
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvpACTk
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvg
 _$s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvs
@@ -419,7 +418,6 @@ $sSd8isFiniteSbvg
 $s9DMPClient3DMPC12callPageView7requestyAA0dE7RequestV_tFySbcfU_
 pageView
 Swift runtime failure: Unexpectedly found nil while unwrapping an Optional value
-isEmpty.get
 ios/DMPClient/Sources/DMPClient/Requests/Base/PageViewInfo.swift
 setup
 $s9DMPClient7SessionC6sharedACvau
@@ -431,7 +429,6 @@ pageViewURL.get
 pageViewInfo.modify
 pageViewRequest.set
 $s9DMPClient3DMPC12pageViewInfoAA04PagedE0VSgvpACTk
-pageViewId.get
 pageViewRequest.modify
 projectURL.get
 $s9DMPClient3DMPC15pageViewRequestAA04PagedE0VSgvpACTk
@@ -671,6 +668,7 @@ $s9DMPClient12PageViewInfoVwca
 $s9DMPClient12PageViewInfoVwcp
 $s9DMPClient12PageViewInfoVwxx
 $s9DMPClient12PageViewInfoVwCP
+pageViewId.get
 viewId.get
 $s9DMPClient12PageViewInfoVWOh
 $s9DMPClient12PageViewInfoVWOc
@@ -1580,6 +1578,7 @@ $s9DMPClient15PageViewRequestV10CodingKeysOAESQAAWl
 $s9DMPClient15PageViewRequestV10CodingKeysOSHAASQWb
 $s9DMPClient15PageViewRequestV10CodingKeysOAEs0E3KeyAAWl
 ios/DMPClient/Sources/DMPClient/Helper/Device.swift
+isEmpty.get
 referrerPageViewId.modify
 referrerPageViewId.set
 referrerPageViewId.get
