@@ -32,17 +32,16 @@ DMP.shared.enableLogging(true)
 SDK collects most of data automatically, like sent time, timezone, session identifier. Tracking requests through `DMP.shared` instance are explained below. Any view controller that use tracking, must call `pageView` function on its `viewDidAppear` function as explained below. This way, SDK can track page durations automatically and reuse page identifiers.
 
 ### Page View
-Any page that is needed to be tracked, should use `pageView` function. PageView function returns unique page and page view identifiers which represents calling page. Initialy, when the view controller is **appeared**, this function will return the identifiers. **You must save that info on view controller to pass it to the sdk, when the controller is reappared.**
+Any page that is needed to be tracked, should use `pageView` function. When the view controller is **appeared**, this function should be called.
 
 ```swift
 class ViewController: UIViewController {
-    var pageViewInfo: PageViewInfo?
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let request = PageViewRequest(
             url: "https://example.com/", canonicalUrl: "", title: "", referrer: "r", infiniteScrollDepth: 0
         )
-        pageViewInfo = DMP.shared.pageView(request, pageViewInfo)
+        DMP.shared.pageView(request)
     }
 }
 ```
