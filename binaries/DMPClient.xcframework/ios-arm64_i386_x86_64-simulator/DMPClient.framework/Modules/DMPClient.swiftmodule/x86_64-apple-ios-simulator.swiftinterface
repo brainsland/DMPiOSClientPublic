@@ -12,7 +12,9 @@ import _Concurrency
   public static let shared: DMPClient.DMP
   public func enableLogging(_ isEnabled: Swift.Bool)
   public func setup(projectId: Swift.String, url: Foundation.URL, language: Swift.String = "tr")
+  @available(*, deprecated, message: "Use `pageView(pageView:) instead. Will be removed in future releases.")
   public func pageView(_ pageView: DMPClient.PageViewRequest, _ info: DMPClient.PageViewInfo?) -> DMPClient.PageViewInfo
+  public func pageView(_ pageView: DMPClient.PageViewRequest)
   public func breadcrumb(breadcrumb1: Swift.String, breadcrumb2: Swift.String? = nil, breadcrumb3: Swift.String? = nil, breadcrumb4: Swift.String? = nil, breadcrumb5: Swift.String? = nil, breadcrumb6: Swift.String? = nil, breadcrumb7: Swift.String? = nil, breadcrumb8: Swift.String? = nil, breadcrumb9: Swift.String? = nil, breadcrumb10: Swift.String? = nil)
   public func scrollPosition(_ position: Swift.Int)
   public func trackZone(type: Swift.String, value: Swift.String)
