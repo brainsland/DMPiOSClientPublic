@@ -56,7 +56,7 @@ DMP.shared.breadcrumb(breadcrumb1: "b1", breadcrumb2: "b2", breadcrumb3: "b3", b
 
 ### Scroll Position
 ```swift
-DMP.shared.scrollPosition(12)
+DMP.shared.scrollPosition(12, limit: 10)
 ```
 
 ### Track Zone
@@ -83,3 +83,14 @@ let request = NewsArticleRequest(
 )
 DMP.shared.newsArticle(request)
 ```
+
+### Gallery
+```swift
+DMP.shared.gallery("https://backend.com/image.png", quantity: 10)
+```
+
+### Gallery View
+```swift
+DMP.shared.galleryView("https://backend.com/image.png", index: 3)
+```
+
