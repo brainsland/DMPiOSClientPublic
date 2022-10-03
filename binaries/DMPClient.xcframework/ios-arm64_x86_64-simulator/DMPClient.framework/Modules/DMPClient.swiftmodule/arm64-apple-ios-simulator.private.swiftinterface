@@ -1,0 +1,39 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DMPClient
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import CryptoKit
+import Foundation
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers public class DMP {
+  public static let shared: DMPClient.DMP
+  public func enableLogging(_ isEnabled: Swift.Bool)
+  public func setup(projectId: Swift.String, url: Foundation.URL, language: Swift.String = "tr")
+  @available(*, deprecated, message: "Use `pageView(pageView:) instead. Will be removed in future releases.")
+  public func pageView(_ pageView: DMPClient.PageViewRequest, _ info: DMPClient.PageViewInfo?) -> DMPClient.PageViewInfo
+  public func pageView(_ pageView: DMPClient.PageViewRequest)
+  public func breadcrumb(breadcrumb1: Swift.String, breadcrumb2: Swift.String? = nil, breadcrumb3: Swift.String? = nil, breadcrumb4: Swift.String? = nil, breadcrumb5: Swift.String? = nil, breadcrumb6: Swift.String? = nil, breadcrumb7: Swift.String? = nil, breadcrumb8: Swift.String? = nil, breadcrumb9: Swift.String? = nil, breadcrumb10: Swift.String? = nil)
+  public func scrollPosition(_ position: Swift.Int, limit: Swift.Int = 10)
+  public func trackZone(type: Swift.String, value: Swift.String)
+  public func trackUser(type: Swift.String, id: Swift.String)
+  public func pageEvent(category: Swift.String, action: Swift.String, label: Swift.String, value: Swift.String)
+  public func newsArticle(_ article: DMPClient.NewsArticleRequest)
+  @objc deinit
+}
+public struct PageViewInfo {
+}
+public struct NewsArticleRequest {
+  public init(newsUrl: Swift.String, headline: Swift.String? = nil, description: Swift.String? = nil, section: Swift.String? = nil, author1: Swift.String? = nil, author2: Swift.String? = nil, author3: Swift.String? = nil, image1: Swift.String? = nil, image2: Swift.String? = nil, image3: Swift.String? = nil, keywords: Swift.String? = nil, info: Swift.String? = nil, datePublished: Swift.String? = nil, dateModified: Swift.String? = nil, wordCount: Swift.Int? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PageViewRequest {
+  public init(url: Swift.String, canonicalUrl: Swift.String? = nil, title: Swift.String, referrer: Swift.String? = "direct", originURL: Swift.String? = nil, infiniteScrollDepth: Swift.Int = 0)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension DMPClient.NewsArticleRequest : Swift.Encodable {}
+extension DMPClient.PageViewRequest : Swift.Encodable {}
