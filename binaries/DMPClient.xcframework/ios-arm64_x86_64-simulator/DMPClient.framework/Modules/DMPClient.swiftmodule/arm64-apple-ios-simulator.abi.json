@@ -3998,6 +3998,50 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "trimmedProjectId",
+            "printedName": "trimmedProjectId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9DMPClient16InputDataRequestPAAE16trimmedProjectIdSSvp",
+            "mangledName": "$s9DMPClient16InputDataRequestPAAE16trimmedProjectIdSSvp",
+            "moduleName": "DMPClient",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient16InputDataRequestPAAE16trimmedProjectIdSSvg",
+                "mangledName": "$s9DMPClient16InputDataRequestPAAE16trimmedProjectIdSSvg",
+                "moduleName": "DMPClient",
+                "genericSig": "<τ_0_0 where τ_0_0 : DMPClient.InputDataRequest>",
+                "sugared_genericSig": "<Self where Self : DMPClient.InputDataRequest>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -28950,7 +28994,7 @@
       "kind": "StringLiteral",
       "offset": 372,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.0.2\""
     },
     {
       "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
