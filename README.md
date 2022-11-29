@@ -103,3 +103,11 @@ DMP.shared.video(
     duration: 12 // Duration of the video.
 )
 ```
+
+### Video Track
+```swift
+DMP.shared.videoTrack(
+    identifier: "video-id", label: "video-label",
+    currentTime: 12 // Current time of the video is playing.
+)
+```
