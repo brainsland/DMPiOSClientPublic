@@ -94,3 +94,12 @@ DMP.shared.gallery("https://backend.com/image.png", quantity: 10)
 DMP.shared.galleryView("https://backend.com/image.png", index: 3)
 ```
 
+### Video
+```swift
+DMP.shared.video(
+    identifier: "video-id", label: "video-label",
+    posterURL: "https://backend.com/image.png",
+    publishedDate: Date(), // Date the video is published at.
+    duration: 12 // Duration of the video.
+)
+```
