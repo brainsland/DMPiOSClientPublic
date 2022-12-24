@@ -118,3 +118,11 @@ Call this when the controller displaying video player is dismissed.
 ```swift
 DMP.shared.stopVideoTracking()
 ```
+
+### Set Video Tracking time interval
+Use `videoTrackIntervalInSeconds` to set time interval for the video tracking events. 
+Default value is 30 seconds, meaning, each 30 seconds will submit video track event automatically, unless it's stopped
+```swift
+/// Time interval in seconds to track video events.
+DMP.shared.videoTrackIntervalInSeconds = 15
+```
