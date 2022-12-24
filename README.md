@@ -94,3 +94,35 @@ DMP.shared.gallery("https://backend.com/image.png", quantity: 10)
 DMP.shared.galleryView("https://backend.com/image.png", index: 3)
 ```
 
+### Video
+```swift
+DMP.shared.video(
+    identifier: "video-id", label: "video-label",
+    posterURL: "https://backend.com/image.png",
+    publishedDate: Date(), // Date the video is published at.
+    duration: 12 // Duration of the video.
+)
+```
+
+### Video Track
+```swift
+DMP.shared.videoTrack(
+    identifier: "video-id", label: "video-label",
+    currentTime: 12 // Current time of the video is playing.
+)
+```
+
+### Stop Video Tracking
+Video Tracking events can be stopped through `stopVideoTracking`.
+Call this when the controller displaying video player is dismissed.
+```swift
+DMP.shared.stopVideoTracking()
+```
+
+### Set Video Tracking time interval
+Use `videoTrackIntervalInSeconds` to set time interval for the video tracking events. 
+Default value is 30 seconds, meaning, each 30 seconds will submit video track event automatically, unless it's stopped
+```swift
+/// Time interval in seconds to track video events.
+DMP.shared.videoTrackIntervalInSeconds = 15
+```
