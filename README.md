@@ -111,3 +111,10 @@ DMP.shared.videoTrack(
     currentTime: 12 // Current time of the video is playing.
 )
 ```
+
+### Stop Video Tracking
+Video Tracking events can be stopped through `stopVideoTracking`.
+Call this when the controller displaying video player is dismissed.
+```swift
+DMP.shared.stopVideoTracking(identifier: "video-id")
+```
