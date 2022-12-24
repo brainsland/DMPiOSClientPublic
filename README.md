@@ -116,5 +116,5 @@ DMP.shared.videoTrack(
 Video Tracking events can be stopped through `stopVideoTracking`.
 Call this when the controller displaying video player is dismissed.
 ```swift
-DMP.shared.stopVideoTracking(identifier: "video-id")
+DMP.shared.stopVideoTracking()
 ```
