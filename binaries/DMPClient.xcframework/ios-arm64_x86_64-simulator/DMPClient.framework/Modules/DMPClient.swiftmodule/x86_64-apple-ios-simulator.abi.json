@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "DMPClient",
+    "printedName": "DMPClient",
     "children": [
       {
         "kind": "Import",
@@ -158,7 +158,23 @@
         "declKind": "Protocol",
         "usr": "s:9DMPClient14APIConvertableP",
         "mangledName": "$s9DMPClient14APIConvertableP",
-        "moduleName": "DMPClient"
+        "moduleName": "DMPClient",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -446,6 +462,20 @@
           "Final"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "APIConvertable",
@@ -868,12 +898,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "DMPClient.APIConvertable?",
+                "printedName": "(any DMPClient.APIConvertable)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "APIConvertable",
-                    "printedName": "DMPClient.APIConvertable",
+                    "printedName": "any DMPClient.APIConvertable",
                     "usr": "s:9DMPClient14APIConvertableP"
                   }
                 ],
@@ -899,12 +929,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "DMPClient.APIConvertable?",
+                    "printedName": "(any DMPClient.APIConvertable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "APIConvertable",
-                        "printedName": "DMPClient.APIConvertable",
+                        "printedName": "any DMPClient.APIConvertable",
                         "usr": "s:9DMPClient14APIConvertableP"
                       }
                     ],
@@ -932,12 +962,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "DMPClient.APIConvertable?",
+                    "printedName": "(any DMPClient.APIConvertable)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "APIConvertable",
-                        "printedName": "DMPClient.APIConvertable",
+                        "printedName": "any DMPClient.APIConvertable",
                         "usr": "s:9DMPClient14APIConvertableP"
                       }
                     ],
@@ -1603,6 +1633,234 @@
                 "declKind": "Accessor",
                 "usr": "s:9DMPClient3DMPC22lastPageScrollPositionSiSgvM",
                 "mangledName": "$s9DMPClient3DMPC22lastPageScrollPositionSiSgvM",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pageViewDebounceWorkItem",
+            "printedName": "pageViewDebounceWorkItem",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchWorkItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchWorkItem",
+                    "printedName": "Dispatch.DispatchWorkItem",
+                    "usr": "s:8Dispatch0A8WorkItemC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvp",
+            "mangledName": "$s9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvp",
+            "moduleName": "DMPClient",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dispatch.DispatchWorkItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DispatchWorkItem",
+                        "printedName": "Dispatch.DispatchWorkItem",
+                        "usr": "s:8Dispatch0A8WorkItemC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvg",
+                "mangledName": "$s9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvg",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dispatch.DispatchWorkItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DispatchWorkItem",
+                        "printedName": "Dispatch.DispatchWorkItem",
+                        "usr": "s:8Dispatch0A8WorkItemC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvs",
+                "mangledName": "$s9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvs",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvM",
+                "mangledName": "$s9DMPClient3DMPC24pageViewDebounceWorkItem8Dispatch0hfG0CSgvM",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastPageViewSentTime",
+            "printedName": "lastPageViewSentTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvp",
+            "mangledName": "$s9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvp",
+            "moduleName": "DMPClient",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvg",
+                "mangledName": "$s9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvg",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvs",
+                "mangledName": "$s9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvs",
+                "moduleName": "DMPClient",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvM",
+                "mangledName": "$s9DMPClient3DMPC20lastPageViewSentTime10Foundation4DateVSgvM",
                 "moduleName": "DMPClient",
                 "implicit": true,
                 "isOpen": true,
@@ -2574,7 +2832,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2905,6 +3179,22 @@
         "declAttributes": [
           "Final",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3073,6 +3363,22 @@
         "declAttributes": [
           "Final",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3584,6 +3890,22 @@
         "moduleName": "DMPClient",
         "declAttributes": [
           "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4272,6 +4594,22 @@
         "isOpen": true,
         "declAttributes": [
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4497,10 +4835,31 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -5158,7 +5517,23 @@
         "usr": "s:9DMPClient4TaskC",
         "mangledName": "$s9DMPClient4TaskC",
         "moduleName": "DMPClient",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -5354,6 +5729,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6062,6 +6453,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -6215,7 +6620,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6237,6 +6642,20 @@
         "genericSig": "<τ_0_0 where τ_0_0 : DMPClient.InputDataRequest>",
         "sugared_genericSig": "<T where T : DMPClient.InputDataRequest>",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -6571,7 +6990,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "InputDataRequest",
-                "printedName": "DMPClient.InputDataRequest",
+                "printedName": "any DMPClient.InputDataRequest",
                 "usr": "s:9DMPClient16InputDataRequestP"
               }
             ],
@@ -6599,7 +7018,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6621,6 +7040,20 @@
         "genericSig": "<τ_0_0 where τ_0_0 : DMPClient.InputDataRequest>",
         "sugared_genericSig": "<T where T : DMPClient.InputDataRequest>",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -9461,6 +9894,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -9522,6 +9969,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -9538,7 +9992,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -9556,6 +10010,20 @@
         "mangledName": "$s9DMPClient17BreadcrumbRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -11459,6 +11927,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -11520,6 +12002,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -11536,7 +12025,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -11554,6 +12043,20 @@
         "mangledName": "$s9DMPClient14GalleryRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -13457,6 +13960,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -13518,6 +14035,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -13534,7 +14058,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -13552,6 +14076,20 @@
         "mangledName": "$s9DMPClient18GalleryViewRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -16844,6 +17382,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -16905,6 +17457,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -16921,7 +17480,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -16942,6 +17501,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -18747,6 +19320,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -18808,6 +19395,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -18824,7 +19418,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -18842,6 +19436,20 @@
         "mangledName": "$s9DMPClient19PageDurationRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -20927,6 +21535,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -20988,6 +21610,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -21004,7 +21633,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -21022,6 +21651,20 @@
         "mangledName": "$s9DMPClient16PageEventRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -24449,6 +25092,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -24510,6 +25167,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -24526,7 +25190,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -24547,6 +25211,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -26352,6 +27030,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -26413,6 +27105,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -26429,7 +27128,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -26447,6 +27146,20 @@
         "mangledName": "$s9DMPClient21ScrollPositionRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -28350,6 +29063,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -28411,6 +29138,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -28427,7 +29161,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -28445,6 +29179,20 @@
         "mangledName": "$s9DMPClient15UserAuthRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -30621,6 +31369,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -30682,6 +31444,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -30698,7 +31467,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30716,6 +31485,20 @@
         "mangledName": "$s9DMPClient12VideoRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -32710,6 +33493,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -32771,6 +33568,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -32787,7 +33591,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -32805,6 +33609,20 @@
         "mangledName": "$s9DMPClient17VideoTrackRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -34708,6 +35526,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -34769,6 +35601,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -34785,7 +35624,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -34803,6 +35642,20 @@
         "mangledName": "$s9DMPClient18ZoneTrackerRequestV",
         "moduleName": "DMPClient",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "InputDataRequest",
@@ -34849,7 +35702,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "APIConvertable",
-                "printedName": "DMPClient.APIConvertable",
+                "printedName": "any DMPClient.APIConvertable",
                 "usr": "s:9DMPClient14APIConvertableP"
               }
             ],
@@ -35087,7 +35940,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "APIConvertable",
-                "printedName": "DMPClient.APIConvertable",
+                "printedName": "any DMPClient.APIConvertable",
                 "usr": "s:9DMPClient14APIConvertableP"
               },
               {
@@ -35267,6 +36120,22 @@
         "moduleName": "DMPClient",
         "declAttributes": [
           "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -35343,33 +36212,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -35762,6 +36617,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomStringConvertible",
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
@@ -35780,6 +36649,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -35802,20 +36707,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           }
         ]
       },
@@ -35896,36 +36787,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -35943,32 +36829,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -35990,6 +36861,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -36022,17 +36929,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       },
@@ -36082,7 +36997,23 @@
         "usr": "s:SE",
         "mangledName": "$sSE",
         "moduleName": "Swift",
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -36186,10 +37117,25 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -36950,6 +37896,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -37004,2982 +37964,1533 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "IntegerLiteral",
       "offset": 321,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 7,
       "value": "\"2.0.2\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "StringLiteral",
       "offset": 753,
       "length": 4,
       "value": "\"tr\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "BooleanLiteral",
       "offset": 804,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "IntegerLiteral",
-      "offset": 2120,
+      "offset": 2335,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 2748,
       "length": 4,
       "value": "\"tr\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/DMP.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/DMP.swift",
       "kind": "IntegerLiteral",
-      "offset": 6227,
+      "offset": 6480,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Helper\/Timer\/AsyncTimer.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Helper\/Timer\/AsyncTimer.swift",
       "kind": "BooleanLiteral",
       "offset": 2031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2035,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2071,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2181,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2229,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2267,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2305,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2392,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2459,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2530,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2595,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2662,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2694,
       "length": 5,
       "value": "\"pb1\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2727,
       "length": 5,
       "value": "\"pb2\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2760,
       "length": 5,
       "value": "\"pb3\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2793,
       "length": 5,
       "value": "\"pb4\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2826,
       "length": 5,
       "value": "\"pb5\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2859,
       "length": 5,
       "value": "\"pb6\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2892,
       "length": 5,
       "value": "\"pb7\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2925,
       "length": 5,
       "value": "\"pb8\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2958,
       "length": 5,
       "value": "\"pb9\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
       "kind": "StringLiteral",
       "offset": 2992,
       "length": 6,
       "value": "\"pb10\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2035,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2071,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2113,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2181,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2229,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2267,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2305,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2392,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2459,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2530,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2595,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2662,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2694,
-      "length": 5,
-      "value": "\"pb1\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2727,
-      "length": 5,
-      "value": "\"pb2\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2760,
-      "length": 5,
-      "value": "\"pb3\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2793,
-      "length": 5,
-      "value": "\"pb4\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2826,
-      "length": 5,
-      "value": "\"pb5\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2859,
-      "length": 5,
-      "value": "\"pb6\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2892,
-      "length": 5,
-      "value": "\"pb7\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2925,
-      "length": 5,
-      "value": "\"pb8\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2958,
-      "length": 5,
-      "value": "\"pb9\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/BreadcrumbRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2992,
-      "length": 6,
-      "value": "\"pb10\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1264,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1300,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1342,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1410,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1458,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1496,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1534,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1621,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1688,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1759,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1824,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1891,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1922,
       "length": 5,
       "value": "\"gcu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
       "kind": "StringLiteral",
       "offset": 1952,
       "length": 3,
       "value": "\"q\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1264,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1300,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1342,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1410,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1458,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1496,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1534,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1621,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1688,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1759,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1824,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1891,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1922,
-      "length": 5,
-      "value": "\"gcu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1952,
-      "length": 3,
-      "value": "\"q\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1261,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1297,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1339,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1407,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1455,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1493,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1531,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1618,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1685,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1756,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1821,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1919,
       "length": 5,
       "value": "\"gcu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1946,
       "length": 3,
       "value": "\"i\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1261,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1297,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1339,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1407,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1455,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1493,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1531,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1618,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1685,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1756,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1821,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1888,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1919,
-      "length": 5,
-      "value": "\"gcu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/GalleryViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1946,
-      "length": 3,
-      "value": "\"i\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2410,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2446,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2488,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2556,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2604,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2642,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2680,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2767,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2834,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2905,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 2970,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3037,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3065,
       "length": 5,
       "value": "\"nau\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3095,
       "length": 3,
       "value": "\"h\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3126,
       "length": 3,
       "value": "\"d\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3153,
       "length": 4,
       "value": "\"as\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3181,
       "length": 4,
       "value": "\"a1\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3209,
       "length": 4,
       "value": "\"a2\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3237,
       "length": 4,
       "value": "\"a3\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3264,
       "length": 5,
       "value": "\"im1\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3292,
       "length": 5,
       "value": "\"im2\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3320,
       "length": 5,
       "value": "\"im3\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3350,
       "length": 3,
       "value": "\"k\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3374,
       "length": 3,
       "value": "\"i\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 4,
       "value": "\"dp\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3440,
       "length": 4,
       "value": "\"dm\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
       "kind": "StringLiteral",
       "offset": 3470,
       "length": 4,
       "value": "\"wc\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2410,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2446,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2488,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2556,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2604,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2642,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2680,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2767,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2834,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2905,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2970,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3037,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3065,
-      "length": 5,
-      "value": "\"nau\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3095,
-      "length": 3,
-      "value": "\"h\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3126,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3153,
-      "length": 4,
-      "value": "\"as\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3181,
-      "length": 4,
-      "value": "\"a1\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3209,
-      "length": 4,
-      "value": "\"a2\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3237,
-      "length": 4,
-      "value": "\"a3\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3264,
-      "length": 5,
-      "value": "\"im1\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3292,
-      "length": 5,
-      "value": "\"im2\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3320,
-      "length": 5,
-      "value": "\"im3\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3350,
-      "length": 3,
-      "value": "\"k\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3374,
-      "length": 3,
-      "value": "\"i\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3407,
-      "length": 4,
-      "value": "\"dp\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3440,
-      "length": 4,
-      "value": "\"dm\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/NewsArticleRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3470,
-      "length": 4,
-      "value": "\"wc\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1278,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1394,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1432,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1470,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1557,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1624,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1695,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1760,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1827,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
       "kind": "StringLiteral",
       "offset": 1860,
       "length": 3,
       "value": "\"v\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1200,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1278,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1346,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1394,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1432,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1470,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1557,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1624,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1695,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1760,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1827,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageDurationRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1860,
-      "length": 3,
-      "value": "\"v\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1394,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1430,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1472,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1540,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1588,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1626,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1664,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1751,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1818,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1889,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 1954,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 2021,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 2050,
       "length": 3,
       "value": "\"c\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 2076,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 2101,
       "length": 3,
       "value": "\"l\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
       "kind": "StringLiteral",
       "offset": 2126,
       "length": 3,
       "value": "\"v\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1394,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1430,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1472,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1540,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1588,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1626,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1664,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1751,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1818,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1889,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1954,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2021,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2050,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2076,
-      "length": 3,
-      "value": "\"a\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2101,
-      "length": 3,
-      "value": "\"l\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageEventRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2126,
-      "length": 3,
-      "value": "\"v\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 8,
       "value": "\"direct\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 1152,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2427,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2463,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2573,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2621,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2659,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2697,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2784,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2851,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2922,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 2987,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3054,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3115,
       "length": 3,
       "value": "\"t\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3214,
       "length": 3,
       "value": "\"r\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3253,
       "length": 3,
       "value": "\"o\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3295,
       "length": 4,
       "value": "\"ou\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3337,
       "length": 4,
       "value": "\"ua\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3493,
       "length": 4,
       "value": "\"bl\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3534,
       "length": 5,
       "value": "\"wiw\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3576,
       "length": 5,
       "value": "\"wih\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3622,
       "length": 4,
       "value": "\"sr\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3672,
       "length": 5,
       "value": "\"ita\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3720,
       "length": 4,
       "value": "\"rb\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3770,
       "length": 5,
       "value": "\"isd\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3812,
       "length": 6,
       "value": "\"rVId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3853,
       "length": 7,
       "value": "\"rPvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3891,
       "length": 5,
       "value": "\"vly\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 3929,
       "length": 5,
       "value": "\"vrc\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2427,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2463,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2505,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2573,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2621,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2659,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2697,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2784,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2851,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2922,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2987,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3054,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3115,
-      "length": 3,
-      "value": "\"t\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3214,
-      "length": 3,
-      "value": "\"r\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3253,
-      "length": 3,
-      "value": "\"o\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3295,
-      "length": 4,
-      "value": "\"ou\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3337,
-      "length": 4,
-      "value": "\"ua\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3493,
-      "length": 4,
-      "value": "\"bl\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3534,
-      "length": 5,
-      "value": "\"wiw\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3576,
-      "length": 5,
-      "value": "\"wih\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3622,
-      "length": 4,
-      "value": "\"sr\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3672,
-      "length": 5,
-      "value": "\"ita\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3720,
-      "length": 4,
-      "value": "\"rb\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3770,
-      "length": 5,
-      "value": "\"isd\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3812,
-      "length": 6,
-      "value": "\"rVId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3853,
-      "length": 7,
-      "value": "\"rPvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3891,
-      "length": 5,
-      "value": "\"vly\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/PageViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3929,
-      "length": 5,
-      "value": "\"vrc\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1213,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1249,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1291,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1359,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1407,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1445,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1483,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1570,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1637,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1708,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1840,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
       "kind": "StringLiteral",
       "offset": 1875,
       "length": 3,
       "value": "\"v\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1213,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1249,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1291,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1359,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1407,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1445,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1483,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1570,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1637,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1708,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1773,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1840,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ScrollPositionRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1875,
-      "length": 3,
-      "value": "\"v\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1250,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1286,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1328,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1396,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1444,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1482,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1520,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1607,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1674,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1745,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1810,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1877,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1906,
       "length": 3,
       "value": "\"t\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
       "kind": "StringLiteral",
       "offset": 1932,
       "length": 5,
       "value": "\"uid\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1250,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1286,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1328,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1396,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1444,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1482,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1520,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1607,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1674,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1745,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1810,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1877,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1906,
-      "length": 3,
-      "value": "\"t\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/UserAuthRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1932,
-      "length": 5,
-      "value": "\"uid\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1557,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1599,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1667,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1715,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1753,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1791,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1878,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 1945,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2016,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2081,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2148,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2179,
       "length": 6,
       "value": "\"viId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2207,
       "length": 5,
       "value": "\"vil\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2238,
       "length": 6,
       "value": "\"vipu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2274,
       "length": 5,
       "value": "\"vdp\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
       "kind": "StringLiteral",
       "offset": 2304,
       "length": 6,
       "value": "\"vidu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1521,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1557,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1599,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1667,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1715,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1753,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1791,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1878,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1945,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2016,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2081,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2148,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2179,
-      "length": 6,
-      "value": "\"viId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2207,
-      "length": 5,
-      "value": "\"vil\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2238,
-      "length": 6,
-      "value": "\"vipu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2274,
-      "length": 5,
-      "value": "\"vdp\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2304,
-      "length": 6,
-      "value": "\"vidu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1352,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1388,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1430,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1498,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1546,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1584,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1622,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1709,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1776,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1847,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1912,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 1979,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 2010,
       "length": 6,
       "value": "\"viId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 2042,
       "length": 6,
       "value": "\"vsct\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
       "kind": "StringLiteral",
       "offset": 2076,
       "length": 6,
       "value": "\"vict\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1352,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1388,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1430,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1498,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1546,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1584,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1622,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1709,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1776,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1847,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1912,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1979,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2010,
-      "length": 6,
-      "value": "\"viId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2042,
-      "length": 6,
-      "value": "\"vsct\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/VideoTrackRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2076,
-      "length": 6,
-      "value": "\"vict\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1268,
       "length": 4,
       "value": "\"fv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1304,
       "length": 5,
       "value": "\"pId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 6,
       "value": "\"dKey\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1414,
       "length": 5,
       "value": "\"sat\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1462,
       "length": 4,
       "value": "\"to\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1500,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1538,
       "length": 5,
       "value": "\"bId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1625,
       "length": 5,
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1692,
       "length": 5,
       "value": "\"vId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1763,
       "length": 6,
       "value": "\"pvId\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1828,
       "length": 3,
       "value": "\"u\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1895,
       "length": 4,
       "value": "\"cu\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1924,
       "length": 4,
       "value": "\"zt\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
       "kind": "StringLiteral",
       "offset": 1954,
       "length": 4,
       "value": "\"zv\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1268,
-      "length": 4,
-      "value": "\"fv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1304,
-      "length": 5,
-      "value": "\"pId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1346,
-      "length": 6,
-      "value": "\"dKey\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1414,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1462,
-      "length": 4,
-      "value": "\"to\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1500,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1538,
-      "length": 5,
-      "value": "\"bId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1625,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1692,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1763,
-      "length": 6,
-      "value": "\"pvId\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1828,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1895,
-      "length": 4,
-      "value": "\"cu\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1924,
-      "length": 4,
-      "value": "\"zt\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/Requests\/ZoneTrackerRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 1954,
-      "length": 4,
-      "value": "\"zv\""
-    },
-    {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/VideoTracker.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/VideoTracker.swift",
       "kind": "StringLiteral",
       "offset": 544,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mobven\/Development\/ios\/DMPClient\/Sources\/DMPClient\/VideoTracker.swift",
+      "filePath": "\/Users\/demirkefelioglu\/Documents\/Codes\/dmp\/DMPiOSClient\/Sources\/DMPClient\/VideoTracker.swift",
       "kind": "IntegerLiteral",
       "offset": 598,
       "length": 2,

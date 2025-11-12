@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DMPClient
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DMPClient
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CommonCrypto
 import CryptoKit
 import Foundation
@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class DMP {
   public static let shared: DMPClient.DMP
   public func enableLogging(_ isEnabled: Swift.Bool)
@@ -38,11 +39,11 @@ public struct PageViewInfo {
 }
 public struct NewsArticleRequest {
   public init(newsUrl: Swift.String, headline: Swift.String? = nil, description: Swift.String? = nil, section: Swift.String? = nil, author1: Swift.String? = nil, author2: Swift.String? = nil, author3: Swift.String? = nil, image1: Swift.String? = nil, image2: Swift.String? = nil, image3: Swift.String? = nil, keywords: Swift.String? = nil, info: Swift.String? = nil, datePublished: Swift.String? = nil, dateModified: Swift.String? = nil, wordCount: Swift.Int? = nil)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct PageViewRequest {
   public init(url: Swift.String, canonicalUrl: Swift.String? = nil, title: Swift.String, referrer: Swift.String? = "direct", originURL: Swift.String? = nil, infiniteScrollDepth: Swift.Int = 0)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension DMPClient.NewsArticleRequest : Swift.Encodable {}
 extension DMPClient.PageViewRequest : Swift.Encodable {}
